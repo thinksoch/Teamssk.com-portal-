@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number with Country Code</title>
+    <!-- Include the jQuery library (required by intl-tel-input) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include the intl-tel-input CSS and JS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+    <style>
+        /* Add some styling for better appearance */
+        .form-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #country {
+            width: 60px; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-group">
+    <label for="country">Country Code:</label>
+    <input type="text" id="country" name="country" value="+91" maxlength="4">
+    
+    <label for="phone">Mobile Number:</label>
+    <input type="tel" id="phone" name="mobile" placeholder="Enter mobile number" required>
+</div>
+
+<script>
+    // Initialize intl-tel-input on the phone input field
+    $("#phone").intlTelInput({
+        initialCountry: "in", // Set the initial country to India
+        separateDialCode: true, // Display the country code separately
+        nationalMode: false, // Allow entering phone numbers in international format
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.js", // Include the utils script
+    });
+</script>
+
+</body>
+</html>
