@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+            /* header {
+        background-color:#D1F2EB;
+        color: #0a0606;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box;
+      } */
+      header{
+      background-color:#D1F2EB;
+    color:black;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    height: 10px;
+    }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('watercolor-international-human-solidarity-day-background_23-2149837203.avif');
+    background-size: cover; /* Adjusts the image size to cover the entire body */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+     min-height: 5vh;
+}
+header h1 {
+    color: #2c3e50; /* Set the color of the h1 text */
+    font-size: 24px; /* Set the font size of the h1 text */
+    margin-bottom: 10px; /* Add margin at the bottom to separate from other elements */
+    text-decoration: underline; /* Add underline decoration */
+}
+
+header u {
+    color: #030512; /* Set the color of the underline */
+}
+
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 260px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    background: #F4ECF7;
+    box-shadow: 0 0 10px rgba(220, 12, 12, 0.1);
+}
+
+        .dashboard-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .dashboard-buttons button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .logo {
+        text-align:left;
+        margin-top: 10px;
+        position: absolute;
+        top: 10px; /* Adjust the top position as needed */
+        left: 10px; /* Adjust the left position as needed */
+
+      }
+      
+      .logo img {
+        width: 50px; /* Adjust the logo size as needed */
+        height: auto;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        height: 20px;
+        width: 100%;
+        background-color:#D1F2EB;
+        color: #100a0a;
+        text-align: center;
+        padding: 10px 0;
+      }
+      @media only screen and (max-width: 600px){
+        form{
+            width: 90%;
+        }
+    }
+
+    </style>
+</head>
+<header>
+    <div class="back-to-home">
+        <a href="Admin.html" class="btn btn-primary">Back to login</a></p></button> 
+      </div>
+    <h1><center><u>Admin Dashboard</u></h1></center>
+    <br><div class="logo">
+        <img src="logo1.jpg" alt="Logo">
+          
+    </div>
+</header>
+
+<body>
+
+    <div class="dashboard-container">
+        <h2>Welcome, Admin!</h2>
+        <div class="dashboard-buttons">
+            <button onclick="createNewUser()">User Registration</button>
+             <!-- <div>
+                 Paste the Zoho Forms embed code here 
+                <iframe src="" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+            </div> -->
+     
+            <button onclick="loginUser()">User Login</button>
+            <!-- <button onclick="createNewUser()">User Register</button> -->
+            <!-- <button onclick="createEnquiryForm()">Enquiry Form</button>
+            <button onclick="exportUserData()">Export User Data</button>
+            <button onclick="exportUserEnquiryData()">Export User Enquiry Data</button> -->
+            <input type="file" id="userFileInput" accept=".xlsx">
+            <button onclick="importUserData()">Import User Data</button>
+
+        </div>
+    </div>
+
+    <script src="adminDashboard.js"></script>
+    <script>
+    </script>
+
+</body>
+<footer>
+    <p>Footer content here</p>
+  </footer>
+
+</html>

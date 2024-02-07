@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('watercolor-international-human-solidarity-day-background_23-2149837203.avif');
+    background-size: cover; /* Adjusts the image size to cover the entire body */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+     min-height: 5vh;
+    /* background-image: url('watercolor-international-human-solidarity-day-background_23-2149837203.avif'); */
+  }
+  
+  header {
+    background-color:#D1F2EB;
+    color:black;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #D1F2EB;;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .login-container {
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 40vh; */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 110px;
+    /* background-image: url('watercolor-international-human-solidarity-day-background_23-2149837203.avif'); */
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color:#A9DFBF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #A9DFBF
+    ;
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust the logo size as needed */
+    height: auto;
+  }
